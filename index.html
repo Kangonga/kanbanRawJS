@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <main id="board">
+        <form id="todo-form">
+            <input type="text" placeholer="New TODO" name="todo" id="todo">
+            <button type="submit">Add +</button>
+        </form>
+        <!-- Wrapper for columns -->
+        <section id="lanes">
+            <div class="todo-column" id="column1">
+                <header><h1>TODO</h1></header>
+                <p class="task" draggable="true">do stuff1</p>
+                <p class="task" draggable="true">do stuff2</p>
+                <p class="task" draggable="true">do stuff3</p>
+            </div>
+
+            <div class="todo-column" id="column2">
+                <header><h1>DOING</h1></header>
+                <p class="task" draggable="true">do stuff1</p>
+                <p class="task" draggable="true">do stuff2</p>
+                <p class="task" draggable="true">do stuff3</p>
+            </div>
+
+            <div class="todo-column" id="column3">
+                <header><h1>DONE</h1></header>
+                <p class="task" draggable="true">do stuff1</p>
+                <p class="task" draggable="true">do stuff2</p>
+                <p class="task" draggable="true">do stuff3</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
