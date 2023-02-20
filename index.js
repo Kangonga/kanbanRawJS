@@ -49,7 +49,13 @@ droppables.forEach(zone=>{
     }))
 })
 const todoForm = document.querySelector("#todo-form")
-const input = document.querySelector()
+const input = document.querySelector("#todo")
+const todoColumn = document.querySelector("#column1")
 todoForm.addEventListener('submit',(e)=>{
     e.preventDefault()
+    let todo = document.createElement("p")
+    todo.innerText = input.value
+    todo.classList.add("task")
+    todoColumn.appendChild(todo)
 })
+
